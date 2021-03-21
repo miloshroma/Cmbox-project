@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cmbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class = "header">
+        <div class="wrapper">
+            <div class="header__logo_bar">
+                <h1 class = "header__logo">
+                    <a href="#">
+                        <img class = "logo_image" src="images/logo.png" alt="logo">
+                    </a>
+                </h1>
+                <ul class = "header__bar">
+                    <li><a href="#">Bar1</a></li>
+                    <li><a href="#">Bar2</a></li>
+                    <li><a href="#">Bar3</a></li>
+                    <li><a href="#">Bar4</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class = "content">
+        <div class="wrapper">
+            <section class = "slider">
+                <div class="slider__dot-conteiner">
+                    <div class="slider__conteiner">
+                        <div class="slider__track">
+                            <div class="slider__item active">
+                                <img src="images/eagle1.jpg" alt="eagle1">
+                            </div>
+                            <div class="slider__item">
+                                <img src="images/golden_eagle.jpg" alt="golden_eagle">
+                            </div>
+                            <div class="slider__item">
+                                <img src="images/harpy_eagle.jpg" alt="harpy_eagle">
+                            </div>
+                            <div class="slider__item">
+                                <img src="images/Steller's_sea_eagle.jpg" alt="Steller's_sea_eagle">
+                            </div>
+                            <div class="slider__item">
+                                <img src="images/White-tailed_eagle.jpg" alt="White-tailed_eagle">
+                            </div>
+                        </div>
+                    </div>      
+                    <div class="dots-wrapper">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+               <div class="arrow-btn">
+                <button id = "prev" class="btn-prev">&larr;</button>
+                <button id = "next"class="btn-next">&rarr;</button>
+               </div>
+            </section>
+            <section class = "section-form">
+               <div class="wrapper">
+                   <div class="form__section-elem">
+                       <h2 class = "header__form">Заполните форму</h2>
+                       <form action="" class = "form">
+                            <div class="input-fields">
+                                <div class="form-field">
+                                    <input id = "user-name" type="text" name="name" autocomplete="off">
+                                    <label class = "label" for="user-name">Имя</label>
+                                </div>
+                                <div class="form-field">
+                                    <input id = "user-subject" type="text" name = "subject" autocomplete="off">
+                                    <label class = "label" for="user-subject">Предмет</label>
+                                </div>
+                                <div class="form-field">
+                                    <input type="email" name = "email" id = "user-email" autocomplete="off">
+                                    <span class = "error">Ошибка</span>
+                                    <label class = "label user-email__label" for="user-email">Email</label>
+                                </div>
+                                <div class="form-field">
+                                    <input type="password" name = "password" id = "user-password">
+                                    <span class = "error"></span>
+                                    <label class = "label user-pass__label" for="user-password">Пароль</label>
+                                </div>
+                                <div class="form-field">
+                                    <input type="tel" name = "phone" id = "user-phone" autocomplete="off">
+                                    <span class = "error"></span>
+                                    <label class = "label user-phone__label" for="user-phone">Телефон</label>
+                                </div>
+                                <div class="form-field">
+                                    <textarea id = "textarea-field" name="comment"></textarea>
+                                    <label class = "label" for="textarea-field">Комментарий</label>
+                                </div>
+                            </div>
+                            <button class = "submit-btn" type="submit">Отправить</button>
+                    </form>
+                   </div>
+               </div>
+            </section>
+            <section class = "map-section">
+                <h2 class = "header__map">Карта</h2>
+                <div id="map" class = "myMap"></div>
+                <div class="route__button">
+                    <button class = "btn-router" id = "from1to2">1 &rarr; 2</button>
+                    <button class = "btn-router" id = "from2to3">2 &rarr; 3</button>
+                    <button class = "btn-router" id = "from3to1">3 &rarr; 1</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class = "footer">
+        <div class="wrapper">
+            <p class="invisible-copyRight">By Roma Milosh</p>
+        </div>
+    </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=5211b41f-4dc1-4521-91b1-0ec4375933d9&lang=ru_RU" type="text/javascript"></script>
+    <script src="index.js"></script>
+</body>
+</html>
